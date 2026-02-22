@@ -14,25 +14,5 @@
     {
         "trigger": { "url-filter": ".*reels_tray.*" },
         "action": { "type": "block" }
-    },
-    {
-        "trigger": { "url-filter": ".*explore_grid.*" },
-        "action": { "type": "block" }
-    },
-    {
-        "trigger": { "url-filter": ".*/api/v1/discover/.*" },
-        "action": { "type": "block" }
-    },
-    {
-        "trigger": { "url-filter": ".*/api/v1/ads/.*" },
-        "action": { "type": "block" }
-    },
-    {
-        "trigger": { "url-filter": ".*/api/v1/feed/injected_ads/.*" },
-        "action": { "type": "block" }
-    },
-    {
-        "trigger": { "url-filter": ".*\\.facebook\\.com/tr/.*" },
-        "action": { "type": "block" }
     }
 ]

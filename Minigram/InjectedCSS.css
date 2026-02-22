@@ -4,36 +4,7 @@ a[href*="/reels/"] {
     display: none !important;
 }
 
-/* Reels SVG icon in tab bar */
 [role="tablist"] a:has(svg path[d*="M12.823"]) {
-    display: none !important;
-}
-
-/* ===== Explore Page: hide grid, keep search ===== */
-
-/* Hide the trending/discover content grid on explore page.
-   The search bar and search results remain visible. */
-[style*="display: grid"]:has(a[href*="/p/"]),
-[style*="display: grid"]:has(a[href*="/reel/"]) {
-    display: none !important;
-}
-
-/* Hide "Suggested for you" / category pills on explore */
-[role="main"] > div > div:has(> a[href*="/explore/tags/"]) {
-    display: none !important;
-}
-
-/* ===== Suggested / Recommended Posts in Feed ===== */
-[aria-label*="Suggested" i] {
-    display: none !important;
-}
-
-[aria-label*="Recommended" i] {
-    display: none !important;
-}
-
-/* Suggested post blocks that link to explore */
-article:has(> div [aria-label*="Suggested" i]) {
     display: none !important;
 }
 
@@ -46,49 +17,7 @@ article:has(a[href*="/reels/"]) {
     display: none !important;
 }
 
-/* "Reels and short videos" section header */
 div:has(> a[href*="/reels/"]):has(h2) {
-    display: none !important;
-}
-
-/* ===== Sponsored / Ad Posts ===== */
-article:has(a[href*="?sponsored"]) {
-    display: none !important;
-}
-
-[aria-label="Sponsored" i] {
-    display: none !important;
-}
-
-article:has(span:is([aria-label="Sponsored" i])) {
-    display: none !important;
-}
-
-/* "Ad" label in post header */
-[aria-label="Ad" i] {
-    display: none !important;
-}
-
-article:has(span:is([aria-label="Ad" i])) {
-    display: none !important;
-}
-
-/* Match header links/spans with exact "Ad" text */
-article:has(header a:is([href*="/ads/"], [href*="?ad"])) {
-    display: none !important;
-}
-
-/* ===== "Use the App" Banner ===== */
-a[href*="itunes.apple.com"],
-a[href*="apps.apple.com"],
-a[href*="instagram://"] {
-    display: none !important;
-}
-
-div[style*="position: fixed"]:has(a[href*="apps.apple.com"]),
-div[style*="position: sticky"]:has(a[href*="apps.apple.com"]),
-div[style*="position: fixed"]:has(a[href*="itunes.apple.com"]),
-div[style*="position: sticky"]:has(a[href*="itunes.apple.com"]) {
     display: none !important;
 }
 
